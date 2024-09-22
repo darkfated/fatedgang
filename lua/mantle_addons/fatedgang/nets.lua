@@ -74,7 +74,10 @@ if SERVER then
         end
 
         Mantle.notify(pl, Color(102, 49, 138), 'Банды', 'Ваша банда успешно создана!')
-        GameProfile.add_achievement(pl, 'create_gang', 1)
+
+        if GameProfile then
+            GameProfile.add_achievement(pl, 'create_gang', 1)
+        end
 
         net.Start('FatedGang-ToClient')
             net.WriteString(pl:SteamID())

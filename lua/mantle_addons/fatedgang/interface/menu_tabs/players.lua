@@ -113,20 +113,22 @@ FatedGang.add_tab(1, 'Игроки банды', 'fatedgang/tab_players.png', fun
         pl_btn.avatar:SetWide(32)
         pl_btn.avatar:SetSteamID(pl_data.steamid64, 128)
 
-        pl_btn.game_profile = vgui.Create('DButton', pl_btn)
-        Mantle.ui.btn(pl_btn.game_profile, nil, nil, Color(44, 44, 44), 8, true, Color(34, 34, 34))
-        pl_btn.game_profile:Dock(RIGHT)
-        pl_btn.game_profile:DockMargin(6, 6, 6, 6)
-        pl_btn.game_profile:SetWide(140)
-        pl_btn.game_profile:SetText('Игровой профиль')
-        pl_btn.game_profile.DoClick = function()
-            RunConsoleCommand('gameprofile_get_player', pl_steamid)
-            
-            timer.Simple(0.2, function()
-                FatedGang.menu:Remove()
+        if GameProfile then
+            pl_btn.game_profile = vgui.Create('DButton', pl_btn)
+            Mantle.ui.btn(pl_btn.game_profile, nil, nil, Color(44, 44, 44), 8, true, Color(34, 34, 34))
+            pl_btn.game_profile:Dock(RIGHT)
+            pl_btn.game_profile:DockMargin(6, 6, 6, 6)
+            pl_btn.game_profile:SetWide(140)
+            pl_btn.game_profile:SetText('Игровой профиль')
+            pl_btn.game_profile.DoClick = function()
+                RunConsoleCommand('gameprofile_get_player', pl_steamid)
                 
-                GameProfile.open_profile(true)
-            end)
+                timer.Simple(0.2, function()
+                    FatedGang.menu:Remove()
+                    
+                    GameProfile.open_profile(true)
+                end)
+            end
         end
     end
 end)
