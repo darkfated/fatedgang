@@ -1,19 +1,19 @@
 # FatedGang
-It's a gang system that allows you to create gangs, customize them, and watch other people's gangs. And all this with convenient customizations and multiple functionality, which will be finalized in the future.
+Это система группировок, которая позволяет создавать группировки, настраивать их и просматривать группировки других людей. Всё это с удобными настройками и множественной функциональностью, которая будет дорабатываться в будущем.
 
-Console command to open the menu: `fatedgang_menu`
+Команда в консоли для открытия меню: `fatedgang_menu`
 
-🔧 [Mantle](https://github.com/darkfated/mantle): in order for the system to work, you need to use this Gmod library
+🔧 [Mantle](https://github.com/darkfated/mantle): для работы системы необходимо использовать эту библиотеку для Gmod
 
-## Screenshots
-<img src="https://github.com/darkfated/FatedGang/assets/49955245/483d2361-0833-481f-9441-3511d2bcce65" width="750" alt="Main page">
-<img src="https://github.com/darkfated/FatedGang/assets/49955245/bce3c00c-c8eb-4799-88c0-09d5eed7880c" width="750" alt="Gang list page">
-<img src="https://github.com/darkfated/FatedGang/assets/49955245/e9ff63f2-0971-49e6-895b-18b60b9ccf2a" width="750" alt="Settings page">
+## Скриншоты
+<img src="https://github.com/darkfated/FatedGang/assets/49955245/483d2361-0833-481f-9441-3511d2bcce65" width="750" alt="Главная страница">
+<img src="https://github.com/darkfated/FatedGang/assets/49955245/bce3c00c-c8eb-4799-88c0-09d5eed7880c" width="750" alt="Страница списка группировок">
+<img src="https://github.com/darkfated/FatedGang/assets/49955245/e9ff63f2-0971-49e6-895b-18b60b9ccf2a" width="750" alt="Страница настроек">
 
-## Additional information
-- It is possible that in the future there will be translations into different languages
-- I am not against cooperation and your help in development. [Issues](https://github.com/darkfated/fatedgang/issues) are waiting!
-- I recommend [adding an addon with content](https://steamcommunity.com/sharedfiles/filedetails/?id=3161031117) to your workshop collection so you don't have any problems
+## Дополнительная информация
+- Возможно, в будущем появятся переводы на разные языки
+- Я не против сотрудничества и вашей помощи в разработке. [Issues](https://github.com/darkfated/fatedgang/issues) ждут!
+- Рекомендую [добавить аддон с контентом](https://steamcommunity.com/sharedfiles/filedetails/?id=3161031117) в вашу коллекцию в Workshop, чтобы у вас не возникло проблем
 
 ## GameProfile
-The addon is a bit integrated with the game profile system. If you want - [you can put this addon](https://github.com/darkfated/gameprofile)
+Аддон немного интегрирован с системой игрового профиля. Если хотите — [вы можете установить этот аддон](https://github.com/darkfated/gameprofile)
